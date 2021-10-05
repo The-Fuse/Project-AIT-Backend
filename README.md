@@ -1,4 +1,6 @@
 # Project AIT BACKEND
+<img src="https://img.shields.io/badge/code_style-standard-brightgreen.svg"> <img src="https://img.shields.io/badge/Node JS-v14.18.0-brightgreen.svg">
+<img src="https://img.shields.io/badge/Express -v4.17.1-brightgreen.svg"> <img src="https://img.shields.io/badge/Mongoose-v6.0.9-brightgreen.svg">
 
 A college-oriented platform for students to bring all the clubs on a single application with the motive for students to collaborate and access all the information in one place. And this repo contains the backend of this poject.
 
@@ -7,11 +9,11 @@ A college-oriented platform for students to bring all the clubs on a single appl
 
 For development, you will only need:
 
-* [node.js](https://nodejs.org/en/) - evented I/O for the backend
-* [Express](https://expressjs.com/) - fast node.js network app framework
-* [MongoDB](https://www.mongodb.com/) - Database Program
-* [Postman](https://www.postman.com/) - API Client
-* [Studio3T](https://studio3t.com/) or [MongoDB Compass](https://www.mongodb.com/products/compass) - Managing DB
+* [Node.js](https://nodejs.org/en/) 
+* [Express](https://expressjs.com/) 
+* [MongoDB](https://www.mongodb.com/) 
+* [Postman](https://www.postman.com/) 
+* [MongoDB Compass](https://www.mongodb.com/products/compass)
 
 ---
 
