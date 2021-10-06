@@ -18,7 +18,7 @@ exports.getClubs = async (req,res,next) => {
 // @acces public
 
 exports.getClub = async (req,res,next) => {
-    const clubsdata = await Club.find(req.params.id);
+    const clubsdata = await Club.findById(req.params.id);
     if(!clubsdata) {
         return res.status(400).json({ Success: false})
     }
@@ -46,7 +46,7 @@ exports.createClub = async (req,res,next) => {
 // @acces public
 
 exports.updateClub = async (req,res,next) => {
-    const club = await Club.findByIdAndUpdate(req.params.id, req,body, {
+    const club = await Club.findByIdAndUpdate(req.params.id, req.body, {
         new: true,
         runValidators: true
     })

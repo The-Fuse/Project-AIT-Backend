@@ -24,8 +24,7 @@ const ClubSchema = new mongoose.Schema({
             type: String
         },
         position: {
-            type: String,
-            enum: ['Secretary', 'Jt. Sec.', 'Member']
+            type: String
         }
     }],
     events: {

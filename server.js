@@ -5,8 +5,9 @@ const dotenv = require('dotenv');
 dotenv.config({path: './config/config.env'});
 
 // Connect to monodb database
-// const connectDB = require('./config/db')
-// connectDB();
+const connectDB = require('./config/db')
+connectDB();
+
 // Routes files
 const club = require('./api/club');
 
@@ -16,6 +17,7 @@ const club = require('./api/club');
 const app = express();
 const PORT = process.env.PORT || 5000;
 
+app.use(express.json());
 
 // Routes of the API
 app.use('/api/v1/club', club);
