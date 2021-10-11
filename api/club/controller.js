@@ -18,19 +18,19 @@ exports.getClubs = async (req,res,next) => {
 // @acces public
 
 exports.getClub = async (req,res,next) => {
-    const clubsdata = await Club.findById(req.params.id);
-    if(!clubsdata) {
+    const clubdata = await Club.findById(req.params.id);
+    if(!clubdata) {
         return res.status(400).json({ Success: false})
     }
 
     res.status(200).json({
         success: true,
-        data: clubsdata
+        data: clubdata
     });
 };
 
 // @desc Create a Club
-// route POST /api/v1/clubs/
+// route POST /api/v1/clubs
 // @acces public
 
 exports.createClub = async (req,res,next) => {
@@ -42,7 +42,7 @@ exports.createClub = async (req,res,next) => {
 };
 
 // @desc Update a Club
-// route POST /api/v1/clubs/:id
+// route PUT /api/v1/clubs/:id
 // @acces public
 
 exports.updateClub = async (req,res,next) => {

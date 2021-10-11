@@ -10,6 +10,7 @@ connectDB();
 
 // Routes files
 const club = require('./api/club');
+const post = require('./api/post')
 
 
 
@@ -21,6 +22,7 @@ app.use(express.json());
 
 // Routes of the API
 app.use('/api/v1/club', club);
+app.use('/api/v1/post', post);
 
 
 app.listen(PORT, () => {

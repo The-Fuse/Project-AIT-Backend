@@ -4,8 +4,12 @@ const PostSchema =  new mongoose.Schema({
     userid: {
         type: String
     },
+    clubid: {
+        type: String
+    },
     time:{
-        type: Date
+        type: Date,
+        default: Date.now
     },
     text: {
         type: String
@@ -42,3 +46,5 @@ const PostSchema =  new mongoose.Schema({
         }
     }]
 });
+
+module.exports = mongoose.model('Post', PostSchema)
